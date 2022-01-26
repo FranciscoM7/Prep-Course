@@ -77,6 +77,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === elemento){
+      return true;
+    }
+  }
+    return false;
+
 }
 
 
@@ -84,6 +91,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var sumaArray = 0;
+  for(let i=0; i < numeros.length; i++){
+    sumaArray += numeros[i];
+  }
+  return sumaArray;
 }
 
 
@@ -91,6 +103,13 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var promedioPuntajes = 0;
+  var sumaPuntajes = 0;
+  for (let i=0; i < resultadosTest.length; i++){
+    sumaPuntajes += resultadosTest[i];
+  }
+  return promedioPuntajes = sumaPuntajes / resultadosTest.length;
+
 }
 
 
@@ -98,6 +117,16 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var numMax = 0;
+  for (let index=0; index < numeros.length; index++){
+    for (let subindex=0; subindex < numeros[index].length ; subindex++ ){
+      if (numeros[index][subindex] > numeros[index]) {
+         numMax = numeros[index][subindex];
+      }
+    }
+  }
+  return numMax;
+    
 }
 
 
