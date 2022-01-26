@@ -52,6 +52,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -61,6 +63,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var strConcatenado = "";
+  for (let i = 0; i < palabras.length; i++) {
+    strConcatenado += palabras[i];
+    strConcatenado += " ";
+  }
+  return strConcatenado;
+    
 }
 
 
