@@ -260,6 +260,20 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  const array = [];
+  for(var i = 0; i < 10; i++) {
+    if(numero == i) {
+      break;
+    }    
+    numero += 2;
+    array[i] = numero;
+
+  }
+    if(i == 10){
+      return array;
+    } else if(i == numero){
+      return "Se interrumpió la ejecución";
+    }
 }
 
 
@@ -270,7 +284,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  const array = [];
+  for(var i = 0; i < 10; i++) {
+    if(i == 4) {
+      continue;
+    }
+    numero += 2;
+    array[i] = numero;
+  }
+  return array;
 }
+  
 
 
 // No modificar nada debajo de esta línea
