@@ -287,6 +287,7 @@ function continueStatement(numero) {
   const array = [];
   for(var i = 0; i < 10; i++) {
     if(i == 4) {
+      i = i -1;
       continue;
     }
     numero += 2;
