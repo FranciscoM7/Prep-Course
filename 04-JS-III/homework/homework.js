@@ -63,8 +63,16 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var strConcatenado = "";
+  for (let i = 0; i < palabras.length; i++) {
+    if (palabras[i] == palabras[palabras.length - 1])  {
+    strConcatenado += palabras[i];  
+  } else {
+    strConcatenado += palabras[i] + " ";
+  }
+  }
 
-    
+    return strConcatenado;
 }
 
 
@@ -279,16 +287,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  const array = [];
-  for(var i = 0; i < 10; i++) {
-    if(i == 4) {
-      i = i -1;
-      continue;
-    }
+  const sumaArray = [];
+  for (let i = 0; i < 10; i++) {
+    if (i === 4) { continue; }
     numero += 2;
-    array[i] = numero;
+    sumaArray[i] = numero;
+     
   }
-  return array;
+  sumaArray.splice(4,1);
+
+  return sumaArray;
 }
   
 

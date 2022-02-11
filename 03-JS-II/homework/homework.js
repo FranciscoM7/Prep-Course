@@ -74,7 +74,7 @@ function colors(color) {
     case "green":
       return "This is green";
       
-    case "orage":
+    case "orange":
       return "This is orange";
       
     default:
@@ -131,6 +131,7 @@ function fizzBuzz(numero) {
  } else if (numero % 3 == 0) {
    return "fizz";
  } 
+ return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
