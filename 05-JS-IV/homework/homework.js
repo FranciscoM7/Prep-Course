@@ -23,9 +23,9 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  return objeto[property] = null;
-  
-  
+  objeto[property] = null;
+  return objeto;
+
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -163,7 +163,8 @@ function agregarMetodoCalculoDescuento(producto) {
   // Tu código:
     producto.calcularPrecioDescuento = function() {
      
-    return this.precio - (this.precio * this.porcentajeDescuento);
+    return this.precio - (this.precio * this.porcentajeDeDescuento);
+  
   };
    
   return producto;
