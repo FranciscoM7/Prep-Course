@@ -1,0 +1,36 @@
+h1 {
+    color: rgb(218, 17, 17);
+  }
+
+  img {
+      width: 400px;
+  }
+
+  #thirdDiv {
+      margin: auto;
+      width: 500px;
+      height: 600px;
+      background-color: crimson;
+      padding: 50px;
+      border-style: double;
+      border-color: honeydew;
+  }
+
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+
+div {
+    margin: auto;
+}
+
+body {
+    background-image: url("https://www.publicdomainpictures.net/pictures/60000/velka/background-1382278814Lc4.jpg");
+  }
+
+ .divClass {
+     margin: auto;
+     text-align: center;
+ }
+
